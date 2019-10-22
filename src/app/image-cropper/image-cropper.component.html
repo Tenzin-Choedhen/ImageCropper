@@ -1,0 +1,11 @@
+<p>image-cropper works!</p>
+<div class="img-container">
+    <img #image [src]="imageSource" crossorigin>
+</div>
+<img [src]="imageDestination" [height]="imgHeight" [width]="imgWidth" class="img-preview">
+
+<input [(ngModel)]="croppedImageName">
+<p>{{croppedImageName}}</p>
+<button (click)="imageSelected()">Submit!</button>
+
+
